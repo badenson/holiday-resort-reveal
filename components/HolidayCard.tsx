@@ -41,9 +41,26 @@ const HolidayCard: React.FC = () => {
 
 
 
-        {/* Animated Visual (Smaller for better fit) */}
-        <div className="mb-4 overflow-hidden rounded-xl opacity-90 hidden sm:block">
-          <NewYearAnimation />
+        {/* Animated Visual (Tropical) */}
+        <div className="mb-4 overflow-hidden rounded-xl shadow-lg border border-white/10 relative h-32 sm:h-56 md:h-72">
+          <img
+            src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1200"
+            alt="Tropical Beach Resort"
+            className="w-full h-full object-cover animate-ken-burns"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+
+          <style dangerouslySetInnerHTML={{
+            __html: `
+            @keyframes kenBurns {
+              0% { transform: scale(1); }
+              50% { transform: scale(1.1); }
+              100% { transform: scale(1); }
+            }
+            .animate-ken-burns {
+              animation: kenBurns 20s ease-in-out infinite;
+            }
+          `}} />
         </div>
 
         {/* Animated Gift Reveal */}
