@@ -39,15 +39,7 @@ const HolidayCard: React.FC = () => {
           Jenna • Alonna • Arionna • Amiyah
         </div>
 
-        {/* Featured Holiday Image */}
-        <div className="mb-4 relative rounded-2xl overflow-hidden shadow-lg border border-white/10 aspect-video sm:aspect-[21/9]">
-          <img 
-            src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1200" 
-            alt="Luxury Holiday Resort"
-            className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-        </div>
+
 
         {/* Animated Visual (Smaller for better fit) */}
         <div className="mb-4 overflow-hidden rounded-xl opacity-90 hidden sm:block">
@@ -55,20 +47,20 @@ const HolidayCard: React.FC = () => {
         </div>
 
         {/* Animated Gift Reveal */}
-        <div 
+        <div
           className={`
             transition-all duration-[1500ms] ease-in-out
             ${showGift ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
           `}
         >
           <p className="text-sm sm:text-base md:text-xl text-white mb-4 leading-snug font-light italic">
-            This season comes with sunshine, room keys, 
+            This season comes with sunshine, room keys,
             and absolutely zero responsibilities.
           </p>
 
           <div className="bg-white/15 p-3 sm:p-5 rounded-2xl mb-4 border border-white/20 shadow-xl scale-100 hover:scale-[1.02] transition-transform">
             <div className="text-base sm:text-xl md:text-2xl text-white leading-tight flex items-center justify-center gap-2">
-              <span className="text-2xl">🎁</span> 
+              <span className="text-2xl">🎁</span>
               <span><span className="text-yellow-300 font-bold">A 7-Day Stay</span> at a <span className="text-yellow-300 font-bold">Hilton Resort</span></span>
             </div>
           </div>
@@ -81,7 +73,7 @@ const HolidayCard: React.FC = () => {
 
       {/* Footer Message */}
       <footer className="mt-2 pt-3 border-t border-white/10 text-[10px] sm:text-xs text-white/50 leading-tight italic">
-        May your holidays be warm, your bags be packed, 
+        May your holidays be warm, your bags be packed,
         and your only decision be beach or pool.
       </footer>
     </div>
