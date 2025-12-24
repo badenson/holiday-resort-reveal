@@ -72,7 +72,7 @@ const HolidayCard: React.FC = () => {
         >
           <p className="text-sm sm:text-base md:text-xl text-white mb-4 leading-snug font-light italic">
             This season comes with sunshine, room keys,
-            and absolutely zero responsibilities.
+            and lots of fun and adventure.
           </p>
 
           <div className="bg-white/15 p-3 sm:p-5 rounded-2xl mb-4 border border-white/20 shadow-xl scale-100 hover:scale-[1.02] transition-transform">
@@ -83,7 +83,7 @@ const HolidayCard: React.FC = () => {
           </div>
 
           <div className="text-xs sm:text-sm md:text-lg text-white/90 mb-4 bg-black/20 py-2 rounded-full inline-block px-6">
-            Choose your dream location &bull; Travel anytime in <span className="text-yellow-300 font-bold">2026</span>
+            Choose your Hilton dream location &bull; Travel anytime in <span className="text-yellow-300 font-bold">2026</span>
           </div>
         </div>
       </div>
