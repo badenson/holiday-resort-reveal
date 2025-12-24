@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import NewYearAnimation from './NewYearAnimation';
+
 
 const HolidayCard: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
